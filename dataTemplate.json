@@ -1,0 +1,19 @@
+{
+    "name": "<full name>",
+    "phone": "XXX-XXX-XXXX",
+    "email": "email@gmail.com",
+    "skills": [
+        {
+            "name": "skill 1",
+            "block": "skill 1 paragraph"
+        },
+        {
+            "name": "skill 2",
+            "block": "skill 2 paragraph."
+        },
+        {
+            "name": "skill 3",
+            "block": "skill 3 paragraph"
+        }
+    ]
+}
