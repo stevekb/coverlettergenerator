@@ -49,8 +49,9 @@ print("\ncopied to clipboard")
 
 ml = [h1, p0, p1, p2, p3, p4 , e1, e2]
 # now we make pdf >:3
+directory = "coverletters/"
 pdfname = "Cover Letter - " + str(company) + " " + str(jobname) + ".pdf"
-doc = SimpleDocTemplate(pdfname, pagesize=letter,
+doc = SimpleDocTemplate(directory + pdfname, pagesize=letter,
 rightMargin=72, leftMargin=72,
 topMargin=72, bottomMargin=18)
 
