@@ -5,7 +5,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import inch
-
+from html import escape
 
 
 with open("privateData.json", "r") as rf:
@@ -72,7 +72,8 @@ for i in range(len(ml)):
         Story.append(Spacer(1,12))
     if i == 6:
         Story.append(Spacer(1,12))
-    text = '<font size=11>%s</font>' % ml[i]
+    text = '<font size=11>%s</font>' % escape(ml[i])
     Story.append(Paragraph(text, myStyle))
     
 doc.build(Story)
+print(str(pdfname) + " created")
